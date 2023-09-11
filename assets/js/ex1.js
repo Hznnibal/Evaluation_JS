@@ -46,3 +46,4 @@ function reinitialiserCompteurs() {
     document.getElementById("plusDe40Ans").textContent = plusDe40Ans;
     document.getElementById("centenaires").textContent = centenaires;
 }
+
