@@ -12,15 +12,15 @@ function calculerPrix() {
     let PORT = 0;
 
     if (TOT >= 100 && TOT <= 200) {
-        REM = TOT * 0.05; // Remise de 5%
+        REM = TOT * 0.05; 
     } else if (TOT > 200) {
-        REM = TOT * 0.10; // Remise de 10%
+        REM = TOT * 0.10;
     }
 
     const totalRemise = TOT - REM;
 
     if (totalRemise <= 500) {
-        PORT = Math.max(6, totalRemise * 0.02); // Frais de port minimum de 6 € ou 2% du total remisé
+        PORT = Math.max(6, totalRemise * 0.02);
     }
 
     const PAP = totalRemise + PORT;
