@@ -22,6 +22,16 @@ body {
           animation-direction: alternate;
 }
 
+fieldset {
+    padding-left: 3em;
+    
+}
+
+#form1 {
+    padding-left: 23em;
+    padding-right: 23em;
+}
+
 
 
 @-webkit-keyframes slidein {
@@ -45,21 +55,43 @@ body {
     }
 }
 
-
-li { 
+#l1{
     display: inline-block; 
-    justify-content: space-around;  
+    padding-right: 3em;
+    padding-left: 3em; 
+}
 
+#l2{
+    display: inline-block; 
+    padding-right: 3em;
+    padding-left: 3em; 
+}
+#l3{
+    display: inline-block; 
+    padding-right: 3em;
+    padding-left: 3em; 
+}
+#l4{
+    display: inline-block; 
+    padding-right: 3em;
+    padding-left: 3em; 
+}
+#l5{
+    display: inline-block; 
+    padding-right: 3em;
+    padding-left: 3em; 
 }
 
 .lien {
-    color: aliceblue;   
+    color: aliceblue;
+       
     
 }
 .ctct {
     color:aliceblue;
     font-family: cursive;
     font-size: x-large;
+    
 }
 
 body {
@@ -79,33 +111,43 @@ header {
     color:aliceblue;
     font-family: cursive;
     font-size: x-large;
-    display:contents;
-    justify-content: center;
+    padding-left: 25em;
 }
 
 #tm {
     font-family: cursive;
     color: aliceblue;
-    font-size: x-large;
-    display:flex;
-    
-
+    font-size: xx-large;
+    padding-left: 22em;    
 }
 
 #tb {
     font-family: cursive;
     color: aliceblue;
-    font-size: x-large;
+    font-size: xx-large;
+    padding-left: 22em;
 }
 
 #tabpre {
     font-family: cursive;
     color: aliceblue;
     font-size: x-large;
+    padding-left: 25em;
+}
+
+
+.ct {
+    padding-left: 18em;
+}
+
+#zone {
+    padding-left: 25em;
 }
 
 #calculprix {
     font-family: cursive;
     color: aliceblue;
     font-size: x-large;
+    padding-left: 25em;
+
 }

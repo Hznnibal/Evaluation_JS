@@ -12,10 +12,10 @@ document.addEventListener("DOMContentLoaded", function () {
         erreurNom.textContent = "";
       }
 
-      const prenom = document.getElementById("nom").value;
+      const prenom = document.getElementById("prenom").value;
       const erreurPrenom = document.getElementById("erreurPrenom");
       if (!prenom.match(/^[A-Za-z\s]+$/)) {
-        erreurNom.textContent = "Le prénom doit contenir uniquement des lettres et des espaces.";
+        erreurPrenom.textContent = "Le prénom doit contenir uniquement des lettres et des espaces.";
         return;
       } else {
         erreurPrenom.textContent = "";

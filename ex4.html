@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/eval.css">
 </head>
+
 <body>
     <header>
         <h1> Evaluation JS</h1>
     </header>
     <nav>
         <ul>
-            <li><a href="index.html" class="lien" title="Exercice 1" style="text-decoration:none">  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspExercice 1</a></li>
-            <li><a href="ex2.html" class="lien" title="Exercice 2" style="text-decoration:none">  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspExercice 2</a></li>
-            <li><a href="ex3.html" class="lien" title="Exercice 3" style="text-decoration:none">  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspExercice 3</a></li>
-            <li><a href="ex4.html" class="lien" title="Exercice 4" style="text-decoration:none">  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspExercice 4</a></li>
-            <li><a href="ex5.html" class="lien" title="Exercice 5" style="text-decoration:none">  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspExercice 5</a></li>
+            <li id="l1"><a href="index.html" class="lien" title="Exercice 1" style="text-decoration:none"> Exercice
+                    1</a></li>
+            <li id="l2"><a href="ex2.html" class="lien" title="Exercice 2" style="text-decoration:none"> Exercice 2</a>
+            </li>
+            <li id="l3"><a href="ex3.html" class="lien" title="Exercice 3" style="text-decoration:none"> Exercice 3</a>
+            </li>
+            <li id="l4"><a href="ex4.html" class="lien" title="Exercice 4" style="text-decoration:none"> Exercice 4</a>
+            </li>
+            <li id="l5"><a href="ex5.html" class="lien" title="Exercice 5" style="text-decoration:none"> Exercice 5</a>
+            </li>
 
         </ul>
-    </nav>
+    </nav><hr>
 
-    <div id="calculprix"><h2>Calculateur de Prix</h2>
-    <form id="prixForm">
-        <div>
-            <label for="prixUnitaire">Prix unitaire du produit :</label>
-            <input type="number" id="prixUnitaire" step="0.01" required>
-        </div>
-        <div>
-            <label for="quantiteCommandee">Quantité commandée :</label>
-            <input type="number" id="quantiteCommandee" required>
-        </div>
-        <button type="button" onclick="calculerPrix()">Calculer le prix</button>
-    </form>
-    <h2>Résultats :</h2>
-    <p id="resultatRemise"></p>
-    <p id="resultatPort"></p>
-    <p id="resultatTotal"></p></div>
+    <div id="calculprix">
+        <h2>Calculateur de Prix</h2>
+        <form id="prixForm">
+            <div>
+                <label for="prixUnitaire">Prix unitaire du produit :</label>
+                <input type="number" id="prixUnitaire" step="0.01" required>
+            </div>
+            <div>
+                <label for="quantiteCommandee">Quantité commandée :</label>
+                <input type="number" id="quantiteCommandee" required>
+            </div>
+            <button type="button" onclick="calculerPrix()">Calculer le prix</button>
+        </form>
+        <h2>Résultats :</h2>
+        <p id="resultatRemise"></p>
+        <p id="resultatPort"></p>
+        <p id="resultatTotal"></p>
+    </div>
     <script src="assets/js/ex4.js"></script>
 </body>
+
 </html>

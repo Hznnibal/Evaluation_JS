@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/eval.css">
 </head>
+
 <body>
     <header>
         <h1> Evaluation JS</h1>
     </header>
     <nav>
         <ul>
-            <li><a href="index.html" class="lien" title="Exercice 1" style="text-decoration:none">  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspExercice 1</a></li>
-            <li><a href="ex2.html" class="lien" title="Exercice 2" style="text-decoration:none">  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspExercice 2</a></li>
-            <li><a href="ex3.html" class="lien" title="Exercice 3" style="text-decoration:none">  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspExercice 3</a></li>
-            <li><a href="ex4.html" class="lien" title="Exercice 4" style="text-decoration:none">  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspExercice 4</a></li>
-            <li><a href="ex5.html" class="lien" title="Exercice 5" style="text-decoration:none">  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspExercice 5</a></li>
+            <li id="l1"><a href="index.html" class="lien" title="Exercice 1" style="text-decoration:none"> Exercice 1</a></li>
+            <li id="l2"><a href="ex2.html" class="lien" title="Exercice 2" style="text-decoration:none"> Exercice 2</a></li>
+            <li id="l3"><a href="ex3.html" class="lien" title="Exercice 3" style="text-decoration:none"> Exercice 3</a></li>
+            <li id="l4"><a href="ex4.html" class="lien" title="Exercice 4" style="text-decoration:none"> Exercice 4</a></li>
+            <li id="l5"><a href="ex5.html" class="lien" title="Exercice 5" style="text-decoration:none"> Exercice 5</a></li>
 
         </ul>
     </nav>
 
-    <div class="ctct">
+    <div class="ctct"><hr>
         <h1 class="ct">Contact</h1>
-        <hr>
+        
         <article>
 
-            <div> *Ces zones sont obligatoires</div>
+            <div id="zone"> *Ces zones sont obligatoires</div>
             <form id="form1" action="http://bienvu.net/script.php" method="post">
                 <fieldset>
                     <legend>
@@ -35,23 +37,24 @@
 
                     <label for="nom">Votre Nom*: </label><input type="text" placeholder="Entrez votre nom" required
                         title="Entrez votre nom" name="nom" id="nom" size="15">
-                        <br><span id="erreurNom" class="erreur"></span>
+                    <span id="erreurNom" ></span><br>
                     <label for="prenom">Votre Prénom*: </label><input type="text" placeholder="Entrez votre prénom"
-                        required title="Veuillez entrez votre prénom" name="prenom" id="prenom" size="15"><span id="erreurPrenom" class="erreur"></span><br><br>
+                        required title="Veuillez entrez votre prénom" name="prenom" id="prenom" size="15"><span
+                        id="erreurPrenom" ></span><br>
                     <label for="sexe_m">Sexe*:</label><input type="radio" required title="sexe" name="sexe" id="sexe_m">
                     Masculin
                     <input type="radio" name="sexe" id="sexe_f"> Féminin
-                    <input type="radio" name="sexe" id="autres"> Autres<br><br>
+                    <input type="radio" name="sexe" id="autres"> Autres<br>
                     <label for="ddn">Date de naissance*: </label><input type="date" required title="ddn" name="ddn"
                         id="ddn"><br>
-                    <label for="cp">Code Postal*: </label><input type="number" placeholder="Exemple: 80000" 
-                        title="cp" name="cp" id="cp"><br><span id="erreurCp" class="erreur"></span>
-                    <label for="adresse">Adresse: </label><input type="text" name="Adresse" id="Adresse" size="15"><br>
-                    <label for="ville">Ville: </label><input type="text" name="Ville" id="Ville" size="15"><br>
+                    <label for="cp">Code Postal*: </label><input type="number" placeholder="Exemple: 80000" title="cp"
+                        name="cp" id="cp"><br><span id="erreurCp" class="erreur"></span>
+                    <label for="adresse">Adresse: </label><input type="text" name="adresse" id="adresse" size="15"><br>
+                    <label for="ville">Ville: </label><input type="text" name="ville" id="ville" size="15"><br>
                     <label for="email">Email*: </label><input type="email"
-                        placeholder="Exemple: JeanDeLaFontaine@outlook.fr" title="email" name="Email"
-                        id="email" size="35">
-                        <br><span id="erreurEmail" class="erreur2"></span>
+                        placeholder="Exemple: JeanDeLaFontaine@outlook.fr" title="email" name="Email" id="email"
+                        size="35">
+                    <span id="erreurEmail" ></span>
 
 
                 </fieldset>
@@ -79,12 +82,15 @@
                 </fieldset><br><br>
                 <label for="accept"></label><input type="checkbox" required name="accept" id="accept"> *J'accepte le
                 traitement
-                informatique de ce formulaire<br><br>
+                informatique de ce formulaire
+
+        </article><br><br>
     </div>
     <input type="submit" value="Envoyer">
-    <input type="reset" value="Annuler">
+    <input type="reset" value="Annuler"></form>
     <hr>
-    </form>
+
     <script src="assets/js/ex5.js"></script>
 </body>
+
 </html>
