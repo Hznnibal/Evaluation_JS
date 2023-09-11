@@ -1,0 +1,111 @@
+
+nav {
+  
+    font-size:2.2em;
+    font-family: cursive;        
+    
+}
+
+body {
+    background-image: url('https://s2.best-wallpaper.net/wallpaper/3840x2160/1904/Full-moon-blue-sea-clouds-night-beautiful-nature-landscape_3840x2160.jpg');
+    background-size:cover;
+          -webkit-animation: slidein 5s;
+          animation: slidein 5s;
+  
+          -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  
+          -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  
+          -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+
+
+@-webkit-keyframes slidein {
+    from {background-position: top; background-size:auto; }
+    to {background-position: -100px 0px;background-size:auto;}
+    }
+    
+    @keyframes slidein {
+    from {background-position: top;background-size:auto; }
+    to {background-position: -100px 0px;background-size:auto;}
+    
+    }
+
+
+@keyframes animate {
+    0% {
+        background-position: -500%;
+    }
+    100% {
+        background-position: 500%;
+    }
+}
+
+
+li { 
+    display: inline-block; 
+    justify-content: space-around;  
+
+}
+
+.lien {
+    color: aliceblue;   
+    
+}
+.ctct {
+    color:aliceblue;
+    font-family: cursive;
+    font-size: x-large;
+}
+
+body {
+    margin-left: 2rem;
+    margin-top: 0.1rem;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    font-family: cursive;
+    color: aliceblue;
+}
+
+.compteur {
+    color:aliceblue;
+    font-family: cursive;
+    font-size: x-large;
+    display:contents;
+    justify-content: center;
+}
+
+#tm {
+    font-family: cursive;
+    color: aliceblue;
+    font-size: x-large;
+    display:flex;
+    
+
+}
+
+#tb {
+    font-family: cursive;
+    color: aliceblue;
+    font-size: x-large;
+}
+
+#tabpre {
+    font-family: cursive;
+    color: aliceblue;
+    font-size: x-large;
+}
+
+#calculprix {
+    font-family: cursive;
+    color: aliceblue;
+    font-size: x-large;
+}

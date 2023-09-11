@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ex1.css">
+</head>
+<body>
+    <header>
+        <h1> Evaluation JS</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="ex1.html" class="lien" title="Exercice 1" style="text-decoration:none">  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspExercice 1</a></li>
+            <li><a href="ex2.html" class="lien" title="Exercice 2" style="text-decoration:none">  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspExercice 2</a></li>
+            <li><a href="ex3.html" class="lien" title="Exercice 3" style="text-decoration:none">  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspExercice 3</a></li>
+            <li><a href="ex4.html" class="lien" title="Exercice 4" style="text-decoration:none">  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspExercice 4</a></li>
+            <li><a href="ex5.html" class="lien" title="Exercice 5" style="text-decoration:none">  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspExercice 5</a></li>
+
+        </ul>
+    </nav>
+
+    <div class="ctct">
+        <h1 class="ct">Contact</h1>
+        <hr>
+        <article>
+
+            <div> *Ces zones sont obligatoires</div>
+            <form id="form1" action="http://bienvu.net/script.php" method="post">
+                <fieldset>
+                    <legend>
+                        <h2> Vos coordonnées</h2>
+                    </legend>
+
+                    <label for="nom">Votre Nom*: </label><input type="text" placeholder="Entrez votre nom" required
+                        title="Entrez votre nom" name="nom" id="nom" size="15">
+                        <br><span id="erreurNom" class="erreur"></span>
+                    <label for="prenom">Votre Prénom*: </label><input type="text" placeholder="Entrez votre prénom"
+                        required title="Veuillez entrez votre prénom" name="prenom" id="prenom" size="15"><span id="erreurPrenom" class="erreur"></span><br><br>
+                    <label for="sexe_m">Sexe*:</label><input type="radio" required title="sexe" name="sexe" id="sexe_m">
+                    Masculin
+                    <input type="radio" name="sexe" id="sexe_f"> Féminin
+                    <input type="radio" name="sexe" id="autres"> Autres<br><br>
+                    <label for="ddn">Date de naissance*: </label><input type="date" required title="ddn" name="ddn"
+                        id="ddn"><br>
+                    <label for="cp">Code Postal*: </label><input type="number" placeholder="Exemple: 80000" 
+                        title="cp" name="cp" id="cp"><br><span id="erreurCp" class="erreur"></span>
+                    <label for="adresse">Adresse: </label><input type="text" name="Adresse" id="Adresse" size="15"><br>
+                    <label for="ville">Ville: </label><input type="text" name="Ville" id="Ville" size="15"><br>
+                    <label for="email">Email*: </label><input type="email"
+                        placeholder="Exemple: JeanDeLaFontaine@outlook.fr" title="email" name="Email"
+                        id="email" size="35">
+                        <br><span id="erreurEmail" class="erreur2"></span>
+
+
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>
+                        <h2> Votre demande</h2>
+                    </legend>
+
+
+                    <label for="demande"> Sujet*:
+                        <select name="demande" id="demande" required>
+                            <option value="" selected disabled> Veuiller sélectionner un sujet</option>
+                            <option value="commandes"> Mes commandes </option>
+                            <option value="question"> Question sur un produit</option>
+                            <option value="reclamation"> Réclamation </option>
+                            <option value="autres"> Autres </option>
+                        </select></label><br>
+                    <div class="qqqq">
+                        <label for="qqnn">Votre question*: </label>
+                        <textarea name="commentaire" placeholder="Veuillez saisir votre question" required rows="5"
+                            cols="40" id="qqnn"></textarea>
+                    </div>
+                </fieldset><br><br>
+                <label for="accept"></label><input type="checkbox" required name="accept" id="accept"> *J'accepte le
+                traitement
+                informatique de ce formulaire<br><br>
+    </div>
+    <input type="submit" value="Envoyer">
+    <input type="reset" value="Annuler">
+    <hr>
+    </form>
+    <script src="ex5.js"></script>
+</body>
+</html>
